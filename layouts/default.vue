@@ -83,14 +83,14 @@
    <v-footer
     dark
     padless
-    class="mt-8"
+    class="mt-5"
   >
     <v-card
       class="flex"
       flat
       tile
     >
-      <v-card-title class="teal">
+      <v-card-title class="cyan darken-1">
         <strong class="subheading">Get connected with us on social networks!</strong>
 
         <v-spacer></v-spacer>

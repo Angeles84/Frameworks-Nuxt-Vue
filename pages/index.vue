@@ -3,7 +3,8 @@
     <v-row>
       <v-col cols="12" sm="6" lg="4" v-for="(personaje, index) in personajes" :key="index">
         <v-card
-         
+          color="cyan darken-4"
+          class="mb-5"
         >
           <v-img
             :src="personaje.imagen"
