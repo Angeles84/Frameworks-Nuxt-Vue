@@ -1,7 +1,7 @@
 <template>
   <v-container class="mt-5">
     <v-row>
-      <v-col cols="12" sm="6" lg="4" v-for="(personaje, index) in personajes" :key="index">
+      <v-col cols="12" sm="6" lg="4" v-for="personaje in personajes" :key="personaje.id">
         <v-card
           color="cyan darken-4"
           class="mb-5"
