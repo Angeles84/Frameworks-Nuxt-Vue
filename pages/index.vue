@@ -2,9 +2,12 @@
   <v-container class="mt-5">
     <v-row>
       <v-col cols="12" sm="6" lg="4" v-for="personaje in personajes" :key="personaje.id">
+       <v-hover v-slot="{hover}">
         <v-card
           color="cyan darken-4"
           class="mb-5"
+          dark
+          :elevation="hover ? 12 : 2"
         >
           <v-img
             :src="personaje.imagen"
@@ -15,7 +18,8 @@
           <v-card-title>
             {{personaje.nombre}}
           </v-card-title>
-       </v-card>
+        </v-card>
+       </v-hover>
       </v-col>
     </v-row>
   </v-container>

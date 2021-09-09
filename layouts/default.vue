@@ -48,6 +48,15 @@
       >
         <v-icon>mdi-minus</v-icon>
       </v-btn>
+
+      <v-btn icon @click.stop="$vuetify.theme.dark = !$vuetify.theme.dark">
+        <v-icon>{{
+          $vuetify.theme.isDark
+          ? 'mdi-white-balance-sunny'
+          : 'mdi-moon-waning-crescent'
+        }}</v-icon>
+      </v-btn>
+
       <v-toolbar-title v-text="title" />
       <v-spacer />
       <v-btn
